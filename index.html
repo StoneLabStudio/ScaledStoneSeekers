@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScaledStone Seekers - RPG adventure game</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="logo" href="#">
+                <img src="assets/logo.png" alt="" srcset="" style="max-width: 100px;">
+            </a>
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <!-- <a class="nav-item nav-link active" href="#">About</a>
+                    <a class="nav-item nav-link" href="#">lorem</a>
+                    <a class="nav-item nav-link" href="#">lorem</a>
+                    <a class="nav-item nav-link" href="#">lorem</a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <video id="video" autoplay loop preload muted playsinline class="video" src="assets/background.mp4"></video>
+        <div class="content">
+            <h1>ScaledStone Seekers</h1>
+            <h2>Indie RPG adventure game</h2>
+            <div class="links">
+                <a href="https://twitter.com/stonelabstudio" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UC5hOu2JFOz5U4Z1g5mdh_HQ/featured" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.patreon.com/stonelab" target="_blank"><i class="fab fa-patreon"></i></a>
+                <a href="https://discord.com/invite/vAxrpVx3pQ" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="copyright">
+            <small>ScaledStone Seekers™ - Copyright © StoneLab Studio - All Rights Reserved.</small>
+        </div>
+    </footer>
+    <div class="audio">
+        <audio id="myAudio">
+            <source src="assets/soundtrack.mp3" type="audio/mpeg">
+        </audio>
+        <button onclick="togglePlay()" type="button" id="play"><i id="play-icon" class="fas fa-volume-up"></i></button>
+    </div>
+    <script>
+        var mp3 = document.getElementById("myAudio");
+        var playButton = document.getElementById("play");
+        var icon = document.getElementById("play-icon");
+        var isPlaying = false;
+
+        function togglePlay() {
+            isPlaying ? mp3.pause() : mp3.play();
+            if (icon.classList.contains('fa-volume-up')) {
+                icon.classList.remove('fa-volume-up');
+                icon.classList.add('fa-volume-down');
+            } else {
+                icon.classList.remove('fa-volume-down');
+                icon.classList.add('fa-volume-up');
+            }
+        };
+
+        mp3.onplaying = function () {
+            isPlaying = true;
+        };
+        mp3.onpause = function () {
+            isPlaying = false;
+        };
+        myVideo.play();
+    </script>
+</body>
+
+</html>

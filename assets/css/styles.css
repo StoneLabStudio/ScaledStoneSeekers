@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #d4d4d4;
+}
+
+header .nav-top {
+    background-color: #13bdee;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .nav-top .info a {
+    color: #fff;
+    margin-left: 20px;
+}
+
+header .navbar {
+    padding: 15px 40px;
+}
+
+header .navbar a {
+    color: #384158;
+    font-size: 1.3rem;
+    margin-right: 20px;
+    transition: color .4s;
+}
+
+header .navbar a.navbar-brand {
+    font-family: 'Open Sans', serif;
+    letter-spacing: .05rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#banner {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner h1 {
+    font-size: 4rem;
+    margin: 0px;
+    color: #fff;
+}
+
+#banner h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 2px;
+}
+
+#banner a {
+    font-size: 3.5rem;
+    color: #ccc;
+    padding: 25px 40px;
+    border-radius: 50%;
+    transition: all .4s;
+}
+
+#banner a:hover {
+    color: #fff;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: .5;
+}
+
+.content {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    opacity: 0;
+}
+
+.audio {
+    position: fixed;
+    right: 1%;
+    top: 1%;
+}
+
+.audio button {
+    padding: 15px;
+    min-width: 47px;
+    min-height: 47px;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.copyright {
+    position: fixed;
+    opacity: .1;
+    /* margin-left: 1px; */
+    bottom: 0;
+    color: #fff;
+}
