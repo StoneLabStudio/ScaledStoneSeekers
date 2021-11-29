@@ -127,7 +127,25 @@ header .navbar a.navbar-brand {
 .copyright {
     position: fixed;
     opacity: .1;
-    /* margin-left: 1px; */
     bottom: 0;
     color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        text-align: center;
+    }
+    
+    .content h1 {
+        font-size: 3rem;
+    }
+    
+    .content h2 {
+        font-size: 1.2rem;
+    }
+    
+    #banner a{
+        font-size: 2rem;
+        padding: 10px , 25px;
+    }
 }
